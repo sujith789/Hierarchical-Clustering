@@ -1,0 +1,30 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf510
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 Readme\
+----------------\
+\
+1) Run HierarchicalClustering.java\
+2) Enter the desired file name - "cho.txt" or "iyer.txt". \
+3) Output is displayed.\
+\
+Flow of algorithm\
+----------------------------\
+\pard\pardeftab720\li720\fi-360\ri720
+\ls1\ilvl0\cf0 \'95	Initially, all the points are in one cluster.\
+\'95	Calculate the number of distinct clusters from ground truth value, and call it say \'91V\'92\
+\'95	Let the total number of items be \'91N\'92.\
+\'95	Create a new cluster map.\
+\'95	Repeat the following steps, N- V times\
+\'95	Choose the minimum value from the distance matrix. Let the minimum value be in row \'91i\'92 and column\'92j\'92.\
+\'95	Check any other values in the cluster map have same value as \'91i\'92. If so update all those values including \'91i\'92 and put in the new cluster\
+\'95	Do the same thing for column \'91j\'92 as well. \
+\'95	This means that all the values in new cluster which have same values as \'91i\'92 or \'91j\'92, together with \'91i\'92 as well as \'91j\'92 goes to the same cluster.\
+\'95	After we have done the above steps for N-V times, the resultant new cluster will contains only that many clusters.\
+\'95	The values assigned to new cluster is the final values\
+}
