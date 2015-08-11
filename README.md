@@ -18,7 +18,7 @@ Flow of algorithm
 •	Create a new cluster map.
 •	Repeat the following steps, N- V times
 •	Choose the minimum value from the distance matrix. Let the minimum value be in row ‘i’ and column’j’.
-•	Check any other values in the cluster map have same value as ‘i’. If so update all those values including ‘i’ and put in the new cluster
+•	Check any other values in the cluster map have same value as ‘i’. If so update all those values including ‘i’ and put in the new cluster.
 •	Do the same thing for column ‘j’ as well. 
 •	This means that all the values in new cluster which have same values as ‘i’ or ‘j’, together with ‘i’ as well as ‘j’ goes to the same cluster.
 •	After we have done the above steps for N-V times, the resultant new cluster will contains only that many clusters.
